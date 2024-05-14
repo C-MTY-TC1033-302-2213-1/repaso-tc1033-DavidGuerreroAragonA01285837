@@ -4,14 +4,14 @@
 // Constructores
 
 Triangulo::Triangulo(){
-    Punto punto_1;
-    Punto punto_2;
-    Punto punto_3;
+    punto_1= Punto(0,0);
+    punto_2= Punto(50,30);
+    punto_3= Punto(25,10);
 }
 Triangulo::Triangulo(Punto _p1,Punto _p2,Punto _p3){
-    Punto punto_1=_p1;
-    Punto punto_2=_p2;
-    Punto punto_3=_p3;
+    punto_1=_p1;
+    punto_2=_p2;
+    punto_3=_p3;
 }
 
 // Metodos
