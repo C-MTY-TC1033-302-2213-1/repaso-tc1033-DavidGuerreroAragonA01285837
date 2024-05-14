@@ -2,7 +2,8 @@
 #define Punto_hpp
 #include <stdio.h>
 #include <math.h>
-#include <iostream>
+#include <string>
+
 class Punto{
 public:
     // Constructores
@@ -14,6 +15,7 @@ public:
     void set_x(double _x);
     void set_y(double _y);
     double calculaDistancia(Punto p2);
+    std::string str();
 private:
     // Atributos
     double x_coordinate;

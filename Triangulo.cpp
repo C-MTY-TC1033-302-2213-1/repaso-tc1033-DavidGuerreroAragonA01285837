@@ -42,6 +42,10 @@ double Triangulo::perimetro(){
 }
 
 double Triangulo::area(){
-    double area= 0.5*(((punto_1.get_x()*punto_2.get_y())+(punto_2.get_x()*punto_3.get_y())+(punto_3.get_x()*punto_1.get_y()))-((punto_1.get_x()*punto_3.get_y())+(punto_3.get_x()*punto_2.get_y())+(punto_2.get_x()*punto_1.get_y())));
+    double area= abs(0.5*(((punto_1.get_x()*punto_2.get_y())+(punto_2.get_x()*punto_3.get_y())+(punto_3.get_x()*punto_1.get_y()))-((punto_1.get_x()*punto_3.get_y())+(punto_3.get_x()*punto_2.get_y())+(punto_2.get_x()*punto_1.get_y()))));
     return area;
+}
+
+std::string Triangulo::str() {
+    return punto_1.str() + ',' + punto_2.str() + ',' + punto_3.str();
 }

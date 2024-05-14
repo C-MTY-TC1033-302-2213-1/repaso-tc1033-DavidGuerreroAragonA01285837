@@ -31,3 +31,6 @@ double Punto::calculaDistancia(Punto p2){
     return distancia;
 }
 
+std::string Punto::str() {
+    return '(' + std::to_string(x_coordinate) + ',' = std::to_string(y_coordinate) = ')';
+}
