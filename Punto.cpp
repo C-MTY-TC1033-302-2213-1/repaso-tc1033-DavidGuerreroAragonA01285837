@@ -1,7 +1,4 @@
 #include "Punto.hpp"
-#include <math.h>
-#include <iostream>
-using namespace std;
 // Constructores
 Punto::Punto(){
     x_coordinate=0;
@@ -34,8 +31,3 @@ double Punto::calculaDistancia(Punto p2){
     return distancia;
 }
 
-void Punto::muestra_punto(){
-    cout<<"Coordenadas del punto"<<endl;
-    cout<<"X point ="<<get_x()<<endl;
-    cout<<"Y point ="<<get_y()<<endl;
-}

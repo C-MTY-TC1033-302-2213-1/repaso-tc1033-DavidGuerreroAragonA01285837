@@ -1,6 +1,9 @@
 #include "Punto.cpp"
 #ifndef Triangulo_hpp
 #define Triangulo_hpp
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
 class Triangulo{
 public:
     // Constructores
@@ -15,7 +18,6 @@ public:
     void setVertice3(Punto _p3);
     double perimetro();
     double area();
-    void str();
 private:
     // Atributos
     Punto punto_1;

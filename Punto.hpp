@@ -1,6 +1,8 @@
 #ifndef Punto_hpp
 #define Punto_hpp
-using namespace std;
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
 class Punto{
 public:
     // Constructores
@@ -12,10 +14,9 @@ public:
     void set_x(double _x);
     void set_y(double _y);
     double calculaDistancia(Punto p2);
-    void muestra_punto();
 private:
     // Atributos
-    double x_coordinate=0;
-    double y_coordinate=0;
+    double x_coordinate;
+    double y_coordinate;
 };
 #endif /*Punto_hpp*/
